@@ -25,8 +25,9 @@
           <div id="title">M00Dify</div>
         </tr>
         <tr>
-          <td>
+          <td id="here">
             <iframe
+              id="iframe"
               src="https://open.spotify.com/embed/playlist/1UPD2woITdKDVExyKDIBFB"
               width="350"
               height="80"
@@ -41,16 +42,17 @@
           <td>
             <div class="heading">Moods</div>
             <br />
-            <button class="ui icon button">
+            <!-- we need to add id for each buttons -->
+            <button class="ui icon button" id="first">
               <i class="red frown outline icon"></i>
             </button>
-            <button class="ui icon button">
+            <button class="ui icon button" id="second">
               <i class="orange meh outline icon"></i>
             </button>
-            <button class="ui icon button">
+            <button class="ui icon button" id="third">
               <i class="yellow smile outline icon"></i>
             </button>
-            <button class="ui icon button">
+            <button class="ui icon button" id="four">
               <i class="green beer icon"></i>
             </button>
             <button class="ui icon button">
@@ -87,18 +89,17 @@
           </td>
         </tr>
       </table>
-
-      <br />
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"
+      integrity="sha256-qs5p0BFSqSvrstBxPvex+zdyrzcyGdHNeNmAirO2zc0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/index.js"></script>
   </body>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"
-    integrity="sha256-qs5p0BFSqSvrstBxPvex+zdyrzcyGdHNeNmAirO2zc0="
-    crossorigin="anonymous"
-  ></script>
 </html>
