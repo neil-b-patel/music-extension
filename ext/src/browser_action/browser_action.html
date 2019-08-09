@@ -5,35 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <style type="text/css">
-      #mainPopup {
-        padding: 10px;
-        height: 300px;
-        width: 350px;
-        font-family: Helvetica, Ubuntu, Arial, sans-serif;
-      }
-      /* * {
-		border: solid 1px red;
-      } */
-    </style>
-    <!-- i'm not sure how i can link css, the link below does not work -->
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"
       integrity="sha256-QVBN0oT74UhpCtEo4Ko+k3sNo+ykJFBBtGduw13V9vw="
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="mainPopup">
-      <table class="ui celled table">
+      <!-- <div id="title">MooDIFY</div> -->
+      <table id="container" class="ui celled table">
+        <tr>
+          <div id="title">M00Dify</div>
+        </tr>
         <tr>
           <td id="here">
             <iframe
               id="iframe"
               src="https://open.spotify.com/embed/playlist/1UPD2woITdKDVExyKDIBFB"
-              width="300"
+              width="350"
               height="80"
               frameborder="0"
               allowtransparency="true"
@@ -44,7 +40,7 @@
         <tr>
           <!-- option1: list of icons -->
           <td>
-            Moods:
+            <div class="heading">Moods</div>
             <br />
             <!-- we need to add id for each buttons -->
             <button class="ui icon button" id="first">
@@ -70,7 +66,7 @@
         <!-- option2: words -->
         <tr>
           <td>
-            Activities:
+            <div class="heading">Activities</div>
             <br />
             <button class="ui icon button">
               <i class="frown outline icon"></i>
