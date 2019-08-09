@@ -1,0 +1,26 @@
+#mainPopup {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  overflow: auto;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#title {
+  font-family: "Righteous", cursive;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+#container {
+  border-color: white;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
