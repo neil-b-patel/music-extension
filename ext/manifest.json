@@ -5,9 +5,9 @@
   "description": "Memes and Mood!",
   "homepage_url": "http://extensionizr.com",
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "icons/moodify.png",
+    "48": "icons/moodify.png",
+    "128": "icons/moodify.png"
   },
   "default_locale": "en",
   "background": {
@@ -15,7 +15,7 @@
     "persistent": true
   },
   "browser_action": {
-    "default_icon": "icons/icon19.png",
+    "default_icon": "icons/moodify.png",
     "default_title": "browser action demo",
     "default_popup": "src/browser_action/browser_action.html"
   },
