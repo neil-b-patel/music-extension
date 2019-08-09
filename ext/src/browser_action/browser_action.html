@@ -1,17 +1,103 @@
-<!doctype html>
-<style type="text/css">
-	#mainPopup {
-		padding: 10px;
-		height: 200px;
-		width: 400px;
-		font-family: Helvetica, Ubuntu, Arial, sans-serif;
-	}
-	h1 {
-		font-size: 2em;
-	}
-</style>
-
-<div id="mainPopup">
-<h1>Hello extensionizr!</h1>
-<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style type="text/css">
+      #mainPopup {
+        padding: 10px;
+        height: 270px;
+        width: 350px;
+        font-family: Helvetica, Ubuntu, Arial, sans-serif;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      /* * {
+		border: solid 1px red;
+      } */
+    </style>
+    <!-- i'm not sure how i can link css, the link below does not work -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"
+      integrity="sha256-QVBN0oT74UhpCtEo4Ko+k3sNo+ykJFBBtGduw13V9vw="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="mainPopup">
+      <table class="ui celled table">
+        <tr>
+          <td>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/1UPD2woITdKDVExyKDIBFB"
+              width="300"
+              height="80"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </td>
+        </tr>
+        <tr>
+          <!-- option1: list of icons -->
+          <td>
+            <button class="ui icon button">
+              <i class="cloud icon"></i>
+            </button>
+            <button class="ui icon button">
+              <i class="cloud icon"></i>
+            </button>
+            <button class="ui icon button">
+              <i class="cloud icon"></i>
+            </button>
+            <button class="ui icon button">
+              <i class="cloud icon"></i>
+            </button>
+            <button class="ui icon button">
+              <i class="cloud icon"></i>
+            </button>
+            <button class="ui icon button">
+              <i class="cloud icon"></i>
+            </button>
+          </td>
+        </tr>
+        <!-- option2: words -->
+        <tr>
+          <td>
+            <div class="ui buttons">
+              <button class="ui button">One</button>
+              <button class="ui button">Two</button>
+              <button class="ui button">Three</button>
+              <button class="ui button">four</button>
+            </div>
+            <br />
+            <div class="ui buttons">
+              <button class="ui button">five</button>
+              <button class="ui button">six</button>
+              <button class="ui button">seven</button>
+              <button class="ui button">eight</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+    <br />
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"
+    integrity="sha256-qs5p0BFSqSvrstBxPvex+zdyrzcyGdHNeNmAirO2zc0="
+    crossorigin="anonymous"
+  ></script>
+</html>
